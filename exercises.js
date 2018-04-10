@@ -16,44 +16,28 @@ function areSameLength(str1, str2) {
   // return true if the two strings have the same length
   // otherwise return false
   // code here
-  if(str1.length === str2.length) {
-    return true;
-  } else {
-    return false;
-  }
+  return str1 === str2 ? true : false;
 }
 
 function areEqual(x, y) {
   // return true if x and y are the same
   // otherwise return false
   // code here
-  if(x === y) {
-    return true;
-  } else {
-    return false;
-  }
+  return x === y ? true : false;
 }
 
 function lessThanNinety(num) {
   // return true if num is less than ninety
   // otherwise return false
   // code here
-  if(num < 90) {
-    return true;
-  } else {
-    return false;
-  }
+  return num < 90 ? true : false;
 }
 
 function greaterThanFifty(num) {
   // return true if num is greater than fifty
   // otherwise return false
   // code here
-  if(num > 50) {
-    return true;
-  } else {
-    return false;
-  }
+  return num > 50 ? true : false;
 }
 
 function add(x, y) {
@@ -90,34 +74,26 @@ function isEven(num) {
   // return true if num is even
   // otherwise return false
   // code here
-  if(num % 2 === 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return num % 2 === 0 ? true : false;
 }
 
 function isOdd(num) {
   // return true if num is false
   // otherwise return false
   // code here
-  if(num % 2 !== 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return num % 2 !== 0 ? true : false;
 }
 
 function square(num) {
   // square num and return the new value
   // code here
-  return num * num;
+  return Math.pow(num, 2);
 }
 
 function cube(num) {
   // cube num and return the new value
   // code here
-  return num * num * num;
+  return Math.pow(num, 3);
 }
 
 function raiseToPower(num, exponent) {
@@ -149,14 +125,14 @@ function combineNames(firstName, lastName) {
   // return firstName and lastName combined as one string and separated by a space.
   // 'Lambda', 'School' -> 'Lambda School'
   // code here
-  return firstName + ' ' + lastName;
+  return `${firstName} ${lastName}`;
 }
 
 function getGreeting(name) {
   // Take the name string and concatenate other strings onto it so it takes the following form:
   // 'Sam' -> 'Hello Sam!'
   // code here
-  return 'Hello ' + name + '!';
+  return `Hello ${name}!`;
 }
 
 // If you can't remember these area formulas then head over to Google or look at the test code.
